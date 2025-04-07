@@ -172,3 +172,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+cricket_shot/*.
+cricket_shot_angles/*.
+datasets/*.
+unique_processed_frames/*.
+uploads/*.
+shot_output.avi/*.
+yolov8n.pt/*.
+.DS_Store
