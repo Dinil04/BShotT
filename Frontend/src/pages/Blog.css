@@ -1,0 +1,335 @@
+.blog-page-container {
+  padding: 50px;
+  font-family: 'Arial', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #2c2f4a;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.shot-container {
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shot-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.shot-container p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.read-more-btn {
+  background-color: #ffcc00;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.read-more-btn:hover {
+  background-color: #e6b800;
+}
+
+.shot-description {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shot-description img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.shot-description h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.shot-description ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.shot-description p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.shot-description p strong {
+  font-weight: bold;
+}
+/* Container for the blog page */
+.blog-page-container {
+  display: flex;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+  border-radius: 10px;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  color: #ffcc00;
+}
+
+/* Main content area */
+.blog-content {
+  flex-grow: 1;
+  margin-left: 30px;
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* Blog headings and intro */
+h2 {
+  font-size: 2.5rem;
+  color: #2c2f4a;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Shot container */
+.shot-container {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(50px); /* Initially off-screen */
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Slide in effect */
+.shot-container.visible {
+  transform: translateY(0); /* Bring it back to normal position */
+  opacity: 1;
+}
+
+/* Add smooth transitions for the buttons */
+.read-more-btn {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #e6b800;
+}
+
+/* Shot description section */
+.shot-description {
+  margin-top: 20px;
+}
+
+.shot-description img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shot-description ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.shot-description ul li {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Scroll Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply animation when section comes into view */
+@media (prefers-reduced-motion: no-preference) {
+  .shot-container {
+    animation: fadeIn 0.6s ease-out forwards, slideInFromLeft 0.8s ease-out forwards;
+  }
+
+  /* Animation when the content section is visible */
+  .shot-container.visible {
+    animation: fadeIn 0.6s ease-out forwards, slideInFromRight 0.8s ease-out forwards;
+  }
+}
+/* Search Bar */
+.search-bar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #ffcc00;
+}
+/* FAQ Section */
+.faq-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.faq-toggle {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-toggle:hover {
+  background-color: #e6b800;
+}
+
+.faq-content {
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.faq-item h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #333;
+}
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;  /* Adjusted margin for better spacing */
+}
+
+.search-bar input {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 30px;  /* Rounded corners */
+  border: 2px solid #ddd;
+  outline: none;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease; /* Smooth transition for focus effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow effect */
+}
+
+.search-bar input:focus {
+  border-color: #e6b800;  /* Green border on focus */
+  box-shadow: 0 0 10px #e6b800; /* Glow effect on focus */
+}
+
+.search-bar input::placeholder {
+  color: #aaa; /* Lighter placeholder text color */
+  font-style: italic;
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #28a745;
+  font-size: 1.2rem;
+}

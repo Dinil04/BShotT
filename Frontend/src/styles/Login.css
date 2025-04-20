@@ -1,0 +1,129 @@
+.login-container,
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #2c2f4a, #623943);
+  padding: 20px;
+}
+
+.login-box,
+.signup-box {
+  background-color: #1e1e2f;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+.login-box h2,
+.signup-box h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.yellow-text {
+  color: #ffcc00;
+}
+
+.login-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input,
+.signup-form input {
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 12px;
+  background-color: #ffcc00;
+  color: #1e1e2f;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #e6b800;
+}
+
+.signup-link,
+.login-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.signup-link a,
+.login-link a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Social Login */
+.social-login {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-btn.google {
+  background-color: #db4437;
+}
+
+.icon-btn.github {
+  background-color: #24292e;
+}
+
+.icon-btn.facebook {
+  background-color: #3b5998;
+}
+
+.icon-btn:hover {
+  opacity: 0.8;
+}

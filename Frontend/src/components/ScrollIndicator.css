@@ -1,0 +1,60 @@
+.scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  
+  /* Bat Handle (Black top line) */
+  .bat-handle {
+    width: 20px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  
+  /* Scroll box (main body) */
+  .scroll-box {
+    width: 60px;
+    height: 160px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: -5px;
+  }
+  
+  /* Scroll text */
+  .scroll-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Down icon */
+  .scroll-icon {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* Red ball */
+  .scroll-ball {
+    width: 30px;
+    height: 30px;
+    background-color: #7A2D38; /* Burgundy/maroon */
+    border-radius: 50%;
+  }
+  
