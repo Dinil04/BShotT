@@ -1,2 +1,0 @@
-# BShotT
-Cricket Batting Technique 
